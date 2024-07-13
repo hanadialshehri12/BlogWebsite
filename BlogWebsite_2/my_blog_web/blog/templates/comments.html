@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+
+{% block title %}
+Comment
+{% endblock %}
+
+{% block content %}
+<h1>Comment</h1>
+
+<ul>
+  {% for x in mycomment %}
+  <p> Blog ID : {{ x.postID }} </p>
+  <p> Comment about it : {{ x.contentCom }} </p>
+
+  {% endfor %}
+</ul>
+
+<p><a href="/"> Back to HOME </a></p>
+{% endblock %}

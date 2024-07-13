@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Blog Detailes
+{% endblock %}
+
+
+{% block content %}
+  <h1>{{ myblogdetails.titlePos }}</h1>
+  
+  <p>Content :  {{ myblogdetails.contentPos}}</p>
+  <p>Category : {{ myblogdetails.categoryPos }}</p>
+  <p>DatePublished : {{ myblogdetails.DatePublished }}</p>
+  
+<p><a href="/"> Back to HOME </a></p>
+  
+{% endblock %}

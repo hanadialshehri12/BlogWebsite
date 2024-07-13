@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+Category
+{% endblock %}
+
+{% block content %}
+<h1>Category</h1>
+
+<ul>
+  {% for x in mycategory %}
+    <li>{{ x.nameCat }} </li>
+  {% endfor %}
+</ul>
+
+<p><a href="/"> Back to HOME </a></p>
+{% endblock %}
